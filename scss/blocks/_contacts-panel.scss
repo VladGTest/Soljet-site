@@ -1,0 +1,38 @@
+.contacts-panel{
+    min-height: 44px;
+    background-color: #1A2533;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__contacts{
+        display:flex;
+        column-gap: 48px;
+        &_block{
+            display: flex;
+            column-gap:16px;
+            font-family: 'Sequel', sans-serif;
+            font-size: 16px;
+            align-items:center;
+            justify-content: center;
+            &_label{
+                position: relative;
+                color: #ffffff75;
+                &::after{
+                    @include line_contact;
+                    margin:0 16px;
+                }
+                margin-right:16px ;
+            }
+            &_tel, &_email{
+                font-size: 14px;
+                text-decoration: none;
+                color: white;
+                transition: 0.3s all;
+                &:hover{
+                    opacity: .5;
+                    transition: 0.3s all;
+                }
+            }
+        }
+    }
+}

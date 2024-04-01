@@ -1,0 +1,102 @@
+.introduct-sect{
+    padding: 96px;
+    background-color: #F2F3F5;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_title{
+            font-family: 'Sequel', sans-serif;
+            font-size: 32px;
+            width: 820px;
+            margin-bottom: 48px;
+            font-weight: bold;
+        }
+        &_more{
+            display: flex;
+            column-gap:10px;
+            color:#1F487C;
+            font-family: 'Sequel', sans-serif;
+            font-size: 18px;
+            font-weight: bold;
+            align-items:center;
+            text-decoration: none;
+            transition: 0.3s all;
+            &:hover{
+                transition: 0.3s all;
+                opacity: 0.7;
+            }
+        }
+    }
+    &__offer-list{
+        display: flex;
+        gap:15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        &_block{
+            position: relative;
+            
+            &:nth-child(3n + 1){
+                &::before{
+                    @include line_for(100%, 1px, #DBDDDF, 0, 0, 1px, 0);
+                }
+            }
+            //  &::before{
+            //     @include line_for(100%, 1px, #DBDDDF, 0, 0, 1px, 0);
+            // }
+            &::after{
+                @include line_for(100%, 1px, #DBDDDF, 0, 0, 400px, 0);
+            }
+            
+            width: 400px;
+            background-color:#F2F3F5;
+            padding: 60px 40px;
+            &_icon{
+                margin-bottom: 24px;
+            }
+            &_title{
+                font-family: 'Sequel',sans-serif;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 12px;
+            }
+            &_descr{
+                font-family: 'Sequel',sans-serif;
+                font-size: 16px;
+                line-height: 30px;
+                margin-bottom: 32px;
+
+            }
+            &_more{
+                padding-top: 24px;
+               
+                position:relative;
+                &::before{
+                    @include line_for(1%, 100%, #DBDDDF, 1px,0,0,0 );
+                }
+                a{
+                    font-family: 'Sequel',sans-serif;
+                    font-size: 16px;
+                    font-weight: bold;
+                    display: inline-flex;
+                    align-items:center;
+                    column-gap: 10px;
+                    text-decoration: none;
+                    color: #1F487C;
+                    transition: 0.3s all;
+                    position: relative;
+                    &::after{
+                        @include line_for(1px, 100%, #DBDDDF, 22px, 0, 0, 0)
+                    }
+                    &:hover{
+                        transition: 0.3s all;
+                        opacity: 0.7;
+                    }
+                }
+                
+               
+            }
+
+        }
+    }
+}

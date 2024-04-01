@@ -1,0 +1,41 @@
+.promo-services{
+    background-color:#F2F3F5;
+    padding: 96px;
+    &__title{
+        font-family: 'Sequel',sans-serif;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 48px;
+    }
+    &__list{
+        display:flex;
+        gap:15px;
+        justify-content: center;
+        flex-wrap: wrap;
+        &_block{
+            width: 390px;
+            background-color:white;
+            padding: 40px 0 0 41px;
+            &_suptitle{
+                color:#919294;
+                font-family: 'Sequel',sans-serif;
+                font-weight: bold;
+                font-size: 18px;
+                margin-bottom: 12px;
+            }
+            &_text{
+                display: flex;
+                align-items:center;
+                justify-content: space-between;
+                margin-bottom: 40px;
+                &_name{
+                    font-family: 'Sequel',sans-serif;
+                    font-size: 36px;
+                    font-weight: bold;
+                }
+            }
+           
+        }
+    }
+}

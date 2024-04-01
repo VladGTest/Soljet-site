@@ -1,0 +1,41 @@
+.clients-sect{
+    background-color:#1F487C;
+    padding: 120px;
+    &__title{
+        font-family: 'Sequel',sans-serif;
+        font-weight: bold;
+        font-size: 32px;
+        color:white;
+        text-align: center;
+        min-height: 132px;
+        margin-bottom: 64px;
+    }
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap:170px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+    &__help-link{
+        
+        display: flex;
+        justify-content: center;
+        a{
+            display: inline-flex;
+            align-items: center;
+            color:white;
+            font-family: 'Sequel',sans-serif;
+            font-weight: bold;
+            font-size: 18px;
+            text-decoration: none;
+            column-gap:10px;
+            transition: 0.3s all;
+            &:hover{
+                transition: 0.3s all;
+                opacity: 0.7;
+            }
+        }
+    }
+}

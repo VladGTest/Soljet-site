@@ -1,0 +1,21 @@
+@mixin line_contact{
+    content: '';
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    background-color: #ffffffc8;
+    
+}
+@mixin line_for($height, $width, $bg-color, $top, $bot, $left, $right){
+    content: '';
+    position: absolute;
+    top: $top;
+    bottom: $bot;
+    left: $left;
+    right: $right;
+    background-color: $bg-color;
+    height: $height;
+    width: $width;
+}
