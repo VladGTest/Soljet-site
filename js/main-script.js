@@ -4,6 +4,39 @@ const navLogo = document.querySelector('.top-menu__nav_logo');
 const navContacts = document.querySelector('.top-menu__nav_contacts');
 const navOverlayMenu = document.querySelector('.nav-menu');
 const navMenuList = document.querySelector('.nav-menu__list');
+const sliderProjects = document.querySelector('.slick-track'); 
+
+
+
+
+$(document).ready(()=>{
+  $('.latest-projects__list').slick({
+      prevArrow: $('.latest-projects__control-panel_arrows_left'),
+      nextArrow: $('.latest-projects__control-panel_arrows_right'),
+      slidesToShow: 1,
+      infinite: false,
+      variableWidth: true,
+      adaptiveHeight: true,
+      speed: 500,
+      focustOnSelect: true,
+      responsive: [
+          {
+            breakpoint: 700,
+            variableWidth: true,
+            settings: {
+              arrows: false,
+            }
+          },
+          {
+            breakpoint: 270,
+            variableWidth: true,
+            settings: {
+              arrows: false,
+            }
+          }
+        ]
+  })
+});
 
 navHamburger.addEventListener('click',()=>{
     navHamburger.classList.toggle('active');
@@ -30,35 +63,5 @@ navMenuList.addEventListener('mouseout', (event)=>{
     }
 });
 
-$(document).ready(()=>{
-    $('.latest-projects__list').slick({
-        prevArrow: $('.latest-projects__control-panel_arrows_left'),
-        nextArrow: $('.latest-projects__control-panel_arrows_right'),
-        slidesToShow: 3,
-        infinite: false,
-        centerMode: true,
-        variableWidth: true,
-        speed: 0,
-        focustOnSelect: true,
-        responsive: [
-            {
-              breakpoint: 700,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 3
-              }
-            },
-            {
-              breakpoint: 270,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
-                slidesToShow: 1
-              }
-            }
-          ]
-    })
-});
+
+

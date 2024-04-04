@@ -35,8 +35,7 @@
         justify-content: center;
         &_block{
             position: relative;
-            
-            &:nth-child(3n + 1){
+            &:nth-child(3n +1 ){
                 &::before{
                     @include line_for(100%, 1px, #DBDDDF, 0, 0, 1px, 0);
                 }

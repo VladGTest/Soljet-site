@@ -1,0 +1,126 @@
+@media (max-width: 1430px) {
+    .container{
+        max-width: 960px;
+    }
+    .introduct-sect{
+        &__offer-list{
+            &_block{
+                    &::before{
+                        @include line_for(100%, 1px, #DBDDDF, 0, 0, 1px, 0);
+                    }
+            }
+        }
+        
+    }
+    .nav-menu{
+        &__descr{
+            width: 50%;
+        }
+        &__list{
+            &_elem{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width: 992px){
+    .container{
+        max-width: 720px;
+    }
+    .promo-hero{
+        &__text{
+            width: 100%;
+        }
+        &__subtitle{
+            width: 100%;
+        }
+    }
+    .introduct-sect{
+        &__header{
+            flex-direction: column;
+            align-items:flex-start;
+            &_title{
+                width: 100%;
+
+            }
+        }
+    }
+    .footer-sect{
+        &__main{
+            flex-wrap: wrap;
+            &_info{
+                margin-bottom: 32px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    .top-menu, .introduct-sect, .nav-menu, .promo-services, .clients-sect, .latest-projects, .promo-hero{
+        padding: 12px 48px;
+    }
+    .footer-sect{
+        padding: 24px 48px;
+    }
+    .accreditation{
+        padding: 12px 0;
+    }
+    .nav-menu{
+        top: 184px;
+        overflow: scroll;
+    }
+    .promo-hero{
+        &__elements{
+            flex-wrap: wrap;
+            justify-content: center;
+            &_more{
+                margin-bottom: 24px;
+            }
+        }
+    }
+    
+}
+@media(max-width: 576px){
+    .container{
+        max-width: 100%;
+    }
+    .contacts-panel{
+        padding: 12px ;
+        &__contacts{
+            justify-content: center;
+            flex-wrap: wrap;
+            &_block{
+                margin-bottom: 12px;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .introduct-sect{
+        &__offer-list{
+            &_block{
+                width: 100%;
+            }
+        }
+    }
+    .promo-services{
+        &__list{
+            &_block{
+                width: 100%;
+            }
+
+        }
+    }
+    .footer-sect{
+        &__main{
+            &_links{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

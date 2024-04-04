@@ -17,6 +17,7 @@
             width: 390px;
             background-color:white;
             padding: 40px 0 0 41px;
+            
             &_suptitle{
                 color:#919294;
                 font-family: 'Sequel',sans-serif;
@@ -33,6 +34,12 @@
                     font-family: 'Sequel',sans-serif;
                     font-size: 36px;
                     font-weight: bold;
+                }
+            }
+            &_image{
+                width: 100%;
+                img{
+                    width: 100%;
                 }
             }
            

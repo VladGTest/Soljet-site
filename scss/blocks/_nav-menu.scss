@@ -10,8 +10,7 @@
     transition: 0.3s all;
     &.show{
         transition: 0.3s all;
-        display: block;
-        
+        display: block;   
     }
     &__wrapper{
         display: flex;
@@ -30,7 +29,6 @@
             padding-bottom: 32px;
             margin-bottom: 32px;
             transition: 0.3s all;
-            
             a{
                 text-decoration: none;
                 color:#ffffff75;
