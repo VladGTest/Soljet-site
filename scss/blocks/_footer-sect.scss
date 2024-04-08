@@ -4,7 +4,7 @@
     &__main{
         display: flex;
         column-gap:115px;
-        justify-content: space-between;
+       
         margin-bottom: 120px;
         &_info{
             display: flex;
@@ -41,11 +41,11 @@
         }
         &_links{
             display: flex;
-            gap:40px;
+            gap:85px;
             &_list{
                 list-style-type: none;
                 li{
-                    margin-bottom: 20px;
+                    margin-bottom: 27px;
                     &:last-child{
                         margin-bottom: 0;
                     }

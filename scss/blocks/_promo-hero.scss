@@ -24,11 +24,13 @@
         color: #ffffff75;
         font-family: 'Sequel',sans-serif;
         margin-bottom: 48px;
+        line-height: 25px;
     }
     &__elements{
         display: flex;
         column-gap: 64px;
         align-items:center;
+        flex-wrap:wrap;
         &_more{
             backdrop-filter: blur(8px);
             border: 1px solid #EAB734;

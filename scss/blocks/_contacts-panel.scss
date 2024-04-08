@@ -7,11 +7,12 @@
     &__contacts{
         display:flex;
         column-gap: 48px;
+        flex-wrap: wrap;
         &_block{
             display: flex;
             column-gap:16px;
             font-family: 'Sequel', sans-serif;
-            font-size: 16px;
+            font-size: 14px;
             align-items:center;
             justify-content: center;
             &_label{

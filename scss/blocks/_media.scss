@@ -13,6 +13,10 @@
         
     }
     .nav-menu{
+        &__wrapper{
+            column-gap: 90px;
+            justify-content: center;
+        }
         &__descr{
             width: 50%;
         }
@@ -20,6 +24,11 @@
             &_elem{
                 width: 100%;
             }
+        }
+    }
+    .clients-sect{
+        &__title{
+            width: 100%;
         }
     }
 }
@@ -60,8 +69,11 @@
     .container{
         max-width: 540px;
     }
-    .top-menu, .introduct-sect, .nav-menu, .promo-services, .clients-sect, .latest-projects, .promo-hero{
-        padding: 12px 48px;
+    .introduct-sect, .nav-menu, .promo-services, .clients-sect, .latest-projects{
+        padding: 24px 48px;
+    }
+    .top-menu, .promo-hero{
+        padding: 0;
     }
     .footer-sect{
         padding: 24px 48px;
@@ -70,15 +82,31 @@
         padding: 12px 0;
     }
     .nav-menu{
-        top: 184px;
+        top: 160px;
         overflow: scroll;
     }
     .promo-hero{
+        padding-bottom: 48px;
         &__elements{
             flex-wrap: wrap;
             justify-content: center;
             &_more{
                 margin-bottom: 24px;
+            }
+        }
+    }
+
+    .promo-services{
+        &__list{
+            &_block{
+                padding: 14px;
+            }
+        }
+    }
+    .introduct-sect{
+        &__offer-list{
+            &_block{
+                padding: 20px 10px;
             }
         }
     }
@@ -105,6 +133,9 @@
         &__offer-list{
             &_block{
                 width: 100%;
+                &:after{
+                    @include line_for(100%, 1px, #dbdddf, 0, 0, 100%, 0);
+                }
             }
         }
     }
