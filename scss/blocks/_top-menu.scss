@@ -1,10 +1,17 @@
 .top-menu{
     min-height: 116px;
     width: 100%;
-    padding-left: 50px;
+    //padding-left: 50px;
     transition: 0.3s all;
     &.show{
+        position: relative;
         background-color: #1F487C;
+        &:after{
+            @include line_for(1%, 100%, #ffffff20, 115px, 0, 0,0);
+
+            max-width: 1440px;
+            margin: 0 auto;
+        }
     }
     &__nav{
         display: flex;
@@ -12,7 +19,6 @@
         justify-content: space-between;
         align-items:center;
         &_logo{
-            margin-left:40px;
             transition: 0.3s all;
             &.hide{
                 display: none;

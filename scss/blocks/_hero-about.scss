@@ -1,0 +1,78 @@
+.hero-about{
+    background-color:#1A2533;
+    min-height: 1033px;
+    &__wrapper{
+        padding:0 120px 120px 120px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__header{
+       display: flex;
+       column-gap:100px;
+       min-height: 590px;
+       &_images{
+            position: relative;
+            width: 600px;
+            img{
+                position: absolute;
+                border: 5px solid white;
+                &:first-child{
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(2){
+                    left: 50%;
+                    top: 80px;
+                }
+                &:last-child{
+                    left: 75px;
+                    top: 220px;
+                }
+            }
+       }
+       &_info{
+            width: 500px;
+            &_title{
+                font-family: 'Sequel',sans-serif;
+                font-size: 44px;
+                font-weight: bold;
+                color:white;
+                margin-bottom: 32px;
+            }
+            &_descr{
+                font-family: 'Sequel',sans-serif;
+                font-size: 16px;
+                color: #ffffff65;
+                line-height: 27px;
+                span{
+                    font-weight: bold;
+                    color:#EAB734;
+                    font-size: 20px;
+                    
+                }
+            }
+       }
+    }
+    &__stats{
+        padding: 45px 120px 120px 120px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        &_item{
+            width: 277px;
+            &_title{
+                color:white;
+                font-family: 'Sequel',sans-serif;
+                font-size: 36px;
+                font-weight: bold;
+                margin-bottom: 6px;
+            }
+            &_comment{
+                color:#ffffff65;
+                font-family: 'Sequel',sans-serif;
+                font-size: 16px;
+            }
+            
+        }
+    }
+}

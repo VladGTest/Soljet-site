@@ -41,8 +41,8 @@ $(document).ready(()=>{
 navHamburger.addEventListener('click',()=>{
     navHamburger.classList.toggle('active');
     navMainMenu.classList.toggle('show');
-    navLogo.classList.toggle('hide');
-    navContacts.classList.toggle('show');
+    //navLogo.classList.toggle('hide');
+    //navContacts.classList.toggle('show');
     navOverlayMenu.classList.toggle('show');
     if(navOverlayMenu.classList.contains('show')){
         document.body.style.overflow = "hidden";
